@@ -1,0 +1,15 @@
+{
+  "short_name": "Tachanks",
+  "name": "Tachanks Website",
+  "icons": [
+    {
+      "src": "public/images/favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,14 @@
+.FadeInLoad {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.FadeInLoad.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap');
+
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --eerie-black-lighter: #2b2b2b;
+  --lightBlue: #116DD2;
+  --blue: #1642BF;
+  --darkBlue: #000082;
+  --darkYellow: #F0B400;
+  --yellow: #FCCA0C;
+  --lighYellow: #F9E07E;
+  --cultured: #f5f3f4;
+  --white: #ffffffff;
+}
+
+.ContactModal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--eerie-black-lighter);
+  border: .2rem solid var(--blue);
+  text-align: center;
+  border-radius: 6px;
+
+  --vertPadding: 2rem;
+  padding-top: var(--vertPadding);
+  padding-bottom: var(--vertPadding);
+
+  --horizPadding: 2rem;
+  padding-left: var(--horizPadding);
+  padding-right: var(--horizPadding);
+
+}
+
+.ContactModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(23, 23, 23, 0.8);
+  transition: all .3s ease-in;
+}
+
+.outer {
+  position: absolute;
+}
+
+.desc {
+  --pad: .25rem;
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+}
+
+.subBtn {
+  padding-top: .7rem;
+}
+
+.ContactModal input {
+  --pad: 1rem;
+  margin-top: var(--pad);
+  margin-bottom: var(--pad);
+
+  transition: transform 0.2s;
+  height: 2rem;
+  width: 20rem;
+  background-color: var(--eerie-black);
+  border-radius: .5rem;
+  border: .1rem solid var(--blue);
+  color: var(--cultured);
+  text-align: center;
+}
+
+.ContactModal input:hover {
+  transform: scale(1.25);
+}
