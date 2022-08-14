@@ -95,9 +95,9 @@ class ContactModal extends Component {
   }
 
   sendEmail = () => {
-    let boxGrade = document.getElementById("Current Gradeid").value;
-    let boxName = document.getElementById("Nameid").value;
-    let boxEmail = document.getElementById("Contact Emailid").value;
+    let boxGrade = document.getElementById("Current_GradeID").value;
+    let boxName = document.getElementById("NameID").value;
+    let boxEmail = document.getElementById("Contact_EmailID").value;
 
     if (
       boxGrade == "" ||

@@ -57,8 +57,8 @@ class LandingPage extends Component {
           <div className="timesDiv">
             <h3
               style={{
-                "padding-bottom": "0.5rem",
-                "text-decoration": "underline",
+                paddingBottom: "0.5rem",
+                textDecoration: "underline",
               }}
             >
               Meeting days
@@ -69,9 +69,9 @@ class LandingPage extends Component {
             </ul>
             <h3
               style={{
-                "padding-bottom": "0.5rem",
-                "padding-top": "0.5rem",
-                "text-decoration": "underline",
+                paddingBottom: "0.5rem",
+                paddingTop: "0.5rem",
+                textDecoration: "underline",
               }}
             >
               Location
