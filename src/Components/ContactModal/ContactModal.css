@@ -82,6 +82,8 @@
   text-align: center;
 }
 
-.ContactModal input:hover {
-  transform: scale(1.25);
+@media only screen and (min-width: 768px) {
+  .ContactModal input:hover {
+    transform: scale(1.25);
+  }
 }
