@@ -61,6 +61,16 @@ body {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .Line {
+    min-width: 70%
+  }
+
+  .LandingPageTitleDiv {
+    font-size: 40px;
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -70,7 +80,7 @@ body {
 }
 
 .timesDiv {
-  --margin: 35vw;
+  --margin: 10vw;
   margin-left: var(--margin);
   margin-right: var(--margin);
   text-align: center;

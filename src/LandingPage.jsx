@@ -29,30 +29,28 @@ class LandingPage extends Component {
               id="PageTyping"
             />
           </div>
-          <p className="TitleDescLand">Lyman High School</p>
+        </div>
+        <div className="FadeInLoad">
+          <img src="../images/BlueLine.png" alt="Line" className="Line" />
+          <h2>Want to find out more?</h2>
         </div>
         <div className="SignUpDiv FadeInLoad">
-          <img
-            src="../images/BlueLine.png"
-            alt="Line"
-            className="Line"
-            id="GamesLine"
-          />
+          <img src="../images/BlueLine.png" alt="Line" className="Line" />
           <h2 className="SignUpTlt">Sign Up</h2>
           <ContactModal
             btnText="Click here to sign up!"
-            inputs={["Current_Grade", "Name", "Contact_Email"]}
+            inputs={[
+              "Current_Grade",
+              "Name",
+              "Preferred_Contact_Email",
+              "Student_ID",
+            ]}
             desc="Enter your relative information in order to sign up"
             title="Lyman Robotics Club Sign Up"
           />
         </div>
         <div className="InfoDiv FadeInLoad">
-          <img
-            src="../images/BlueLine.png"
-            alt="Line"
-            className="Line"
-            id="GamesLine"
-          />
+          <img src="../images/BlueLine.png" alt="Line" className="Line" />
           <h2 className="SignUpTlt">Information</h2>
           <div className="timesDiv">
             <h3
@@ -65,7 +63,7 @@ class LandingPage extends Component {
             </h3>
             <ul className="DaysList">
               <li>Monday: 2:20pm-5:00pm</li>
-              <li>Friday: 2:20pm-5:00pm</li>
+              <li>Wednesday: 1:20pm-4:00pm</li>
             </ul>
             <h3
               style={{

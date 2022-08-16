@@ -62,10 +62,7 @@ class Navbar extends Component {
           </Link>
           <ul>
             <li>
-              <NavLink to="/code">Code</NavLink>
-            </li>
-            <li>
-              <NavLink to="/photos">Photos</NavLink>
+              <NavLink to="/schedule">Schedule *Under construction*</NavLink>
             </li>
           </ul>
         </nav>
