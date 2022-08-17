@@ -110,7 +110,7 @@ class ContactModal extends Component {
     }
   }
 
-  sendEmail = () => {
+  sendEmail() {
     let boxGrade = document.getElementById("Current_GradeID").value;
     let boxName = document.getElementById("NameID").value;
     let boxEmail = document.getElementById("Preferred_Contact_EmailID").value;
@@ -136,7 +136,7 @@ class ContactModal extends Component {
     const request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI",
+      "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI", //"https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu", //
       true
     );
     request.setRequestHeader("Content-type", "application/json");
@@ -158,8 +158,8 @@ class ContactModal extends Component {
               inline: true,
             },
             {
-              name: "_ _",
-              value: "_ _",
+              name: "\u200b",
+              value: "\u200b",
               inline: true,
             },
             {
@@ -216,7 +216,7 @@ class ContactModal extends Component {
     document.getElementById("NameID").value = "";
     document.getElementById("Preferred_Contact_EmailID").value = "";
     document.getElementById("Student_IDID").value = "";
-  };
+  }
 }
 
 export default ContactModal;
