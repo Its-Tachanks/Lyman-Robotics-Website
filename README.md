@@ -1,3 +1,3 @@
 # Lyman-Robotics-Website
 
-Our personal website for all of our information @ LymanRobotics.xyz
+Our personal website for all of our information @ LymanRobotics.netlify.app
