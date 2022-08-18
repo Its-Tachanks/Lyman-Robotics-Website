@@ -31,11 +31,11 @@ class LandingPage extends Component {
           </div>
         </div>
         <div className="FadeInLoad">
-          <img src="../images/BlueLine.png" alt="Line" className="Line" />
+          <hr />
           <h2>Want to find out more?</h2>
         </div>
         <div className="SignUpDiv FadeInLoad">
-          <img src="../images/BlueLine.png" alt="Line" className="Line" />
+          <hr />
           <h2 className="SignUpTlt">Sign Up</h2>
           <ContactModal
             btnText="Click here to sign up!"
@@ -50,7 +50,7 @@ class LandingPage extends Component {
           />
         </div>
         <div className="InfoDiv FadeInLoad">
-          <img src="../images/BlueLine.png" alt="Line" className="Line" />
+          <hr />
           <h2 className="SignUpTlt">Information</h2>
           <div className="timesDiv">
             <h3

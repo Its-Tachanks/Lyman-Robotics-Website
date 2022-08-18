@@ -24,11 +24,24 @@ body {
   text-align: center;
 }
 
+hr {
+  min-width: 60%;
+  max-width: 70%;
+  margin: auto;
+  color: var(--blue);
+  background-color: var(--blue);
+
+  height: 2px;
+  --hrMarginVert: 0.75rem;
+  margin-top: var(--hrMarginVert);
+  margin-bottom: var(--hrMarginVert);
+}
+
+@media only screen and (max-width: 768px) {
+}
+
 .SignUpTlt {
-  padding-top: 0.5rem;
-  --padSignUpBtm: 0.75rem;
-  padding-bottom: var(--padSignUpBtm);
-  
+  background-color: inherit;
 }
 
 .LandingPageTitleDiv {
@@ -44,39 +57,16 @@ body {
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .LandingPageTitleDiv {
     font-size: 48px;
     --pad: 1.5rem;
     padding-left: var(--pad);
     padding-right: var(--pad);
   }
-  .langDiv img {
-    height: 50%;
-  }
-}
-
-.Line {
-  max-width: 80%;
-  margin: auto;
-}
-
-@media (max-width: 768px) {
-  .Line {
-    min-width: 70%
-  }
-
   .LandingPageTitleDiv {
     font-size: 40px;
   }
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 50vh;
 }
 
 .timesDiv {
