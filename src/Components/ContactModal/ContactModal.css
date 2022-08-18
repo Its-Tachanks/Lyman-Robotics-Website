@@ -57,10 +57,34 @@
   padding-top: 1rem;
 }
 
-.desc {
+
+.ModalDesc {
   --pad: .25rem;
   padding-top: var(--pad);
   padding-bottom: var(--pad);
+}
+
+.ModalTitle {
+  font-size: 26px;
+  --pad: .0rem;
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+}
+
+@media only screen and (max-width: 768px) {
+  .ModalDesc {
+    font-size: 16px;
+    --DescPad: 0rem;
+    margin-left: var(--DescPad);
+    margin-right: var(--DescPad);
+  }
+
+  .ModalTitle {
+    font-size: 21px;
+    --pad: 0rem;
+    padding-top: var(--pad);
+    padding-bottom: var(--pad);
+  }
 }
 
 .subBtn {
@@ -85,5 +109,17 @@
 @media only screen and (min-width: 768px) {
   .ContactModal input:hover {
     transform: scale(1.25);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ContactModal {
+    --vertPadding: 1rem;
+    padding-top: var(--vertPadding);
+    padding-bottom: var(--vertPadding);
+
+    --horizPadding: 1rem;
+    padding-left: var(--horizPadding);
+    padding-right: var(--horizPadding);
   }
 }

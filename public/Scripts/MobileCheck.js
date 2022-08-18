@@ -6,6 +6,6 @@ window.addEventListener("load", function() {
   };
 
   if (mobileCheck()) {
-    alert("No promises for this website being perfect on a phone")
+    console.log("No promises for this website being perfect on a phone")
   }
 })

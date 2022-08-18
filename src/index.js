@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import LandingPage from "./LandingPage";
+import LinksPage from "./LinksPage";
 
 import "./index.css"
 
@@ -15,6 +16,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/links" element={<LinksPage />} />
     </Routes>
   </BrowserRouter>
 );

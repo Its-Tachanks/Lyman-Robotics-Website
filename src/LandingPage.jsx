@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+// eslint-disable-next-line
 import $ from "jquery";
 
 // CSS Import
@@ -7,6 +9,7 @@ import "./LandingPage.css";
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
 import ContactModal from "./Components/ContactModal/ContactModal";
+import Meetings from "./Components/Meetings/Meetings";
 
 // Library Imports
 import ReactTypingEffect from "react-typing-effect";
@@ -32,11 +35,22 @@ class LandingPage extends Component {
         </div>
         <div className="FadeInLoad">
           <hr />
-          <h2>Want to find out more?</h2>
+          <h2>What we do</h2>
+          <p>
+            Someone give me a paragraph to put here, dont really feel like
+            writing one that isnt 2 words long
+          </p>
+        </div>
+        <div className="FadeInLoad">
+          <hr />
+          <h2>Meeting Info</h2>
+          <Meetings />
+          <p>Building 6</p>
+          <p>Room 019</p>
         </div>
         <div className="SignUpDiv FadeInLoad">
           <hr />
-          <h2 className="SignUpTlt">Sign Up</h2>
+          <h2 className="SignUpTlt">Join the club</h2>
           <ContactModal
             btnText="Click here to sign up!"
             inputs={[
@@ -48,34 +62,6 @@ class LandingPage extends Component {
             desc="Enter your relative information in order to sign up"
             title="Lyman Robotics Club Sign Up"
           />
-        </div>
-        <div className="InfoDiv FadeInLoad">
-          <hr />
-          <h2 className="SignUpTlt">Information</h2>
-          <div className="timesDiv">
-            <h3
-              style={{
-                paddingBottom: "0.5rem",
-                textDecoration: "underline",
-              }}
-            >
-              Meeting days
-            </h3>
-            <ul className="DaysList">
-              <li>Monday: 2:20pm-5:00pm</li>
-              <li>Wednesday: 1:20pm-4:00pm</li>
-            </ul>
-            <h3
-              style={{
-                paddingBottom: "0.5rem",
-                paddingTop: "0.5rem",
-                textDecoration: "underline",
-              }}
-            >
-              Location
-            </h3>
-            <p>Building 6, near cafeteria, Room 019</p>
-          </div>
         </div>
       </React.Fragment>
     );

@@ -1,7 +1,8 @@
-import React, { Component, useRef } from "react";
+import React, { Component } from "react";
 import Modal from "react-modal";
 import emailjs from "@emailjs/browser";
 
+// eslint-disable-next-line
 import $ from "jquery";
 
 import "./ContactModal.css";
@@ -60,8 +61,8 @@ class ContactModal extends Component {
           className="ContactModal"
           overlayClassName="ContactModalOverlay"
         >
-          <h2>{this.props.title}</h2>
-          <div className="desc">{this.props.desc}</div>
+          <h2 className="ModalTitle">{this.props.title}</h2>
+          <div className="ModalDesc">{this.props.desc}</div>
           {this.props.inputs.map((inputName, index) => (
             <div className="msgInput" key={inputName + index}>
               <input
@@ -117,14 +118,14 @@ class ContactModal extends Component {
     let idEmail = document.getElementById("Student_IDID").value;
 
     if (
-      boxGrade == "" ||
-      boxGrade == undefined ||
-      boxName == "" ||
-      boxName == undefined ||
-      boxEmail == "" ||
-      boxEmail == undefined ||
-      idEmail == "" ||
-      idEmail == undefined
+      boxGrade === "" ||
+      boxGrade === undefined ||
+      boxName === "" ||
+      boxName === undefined ||
+      boxEmail === "" ||
+      boxEmail === undefined ||
+      idEmail === "" ||
+      idEmail === undefined
     ) {
       this.setState({
         modalIsOpen: false,
@@ -133,85 +134,103 @@ class ContactModal extends Component {
       return;
     }
 
-    const request = new XMLHttpRequest();
-    request.open(
-      "POST",
-      "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI", //"https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu", //
-      true
-    );
-    request.setRequestHeader("Content-type", "application/json");
-    const params = {
-      embeds: [
-        {
-          title: "Club sign up form",
-          description: "Someone signed up for the club!",
-          color: 1458879,
-          fields: [
-            {
-              name: "Name",
-              value: boxName,
-              inline: true,
+    // ! Use Test webhook here
+    var useTestWebhook = true;
+    var webhookUrl = !useTestWebhook
+      ? "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI"
+      : "https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu";
+
+    // ! Set to use webhook function
+    var useWebhook = true;
+
+    console.log(webhookUrl);
+
+    // Discord Webhook code
+    if (useWebhook) {
+      const request = new XMLHttpRequest();
+      request.open("POST", webhookUrl, true);
+      request.setRequestHeader("Content-type", "application/json");
+      const params = {
+        embeds: [
+          {
+            title: "Club sign up form",
+            description: "Someone signed up for the club!",
+            color: 1458879,
+            fields: [
+              {
+                name: "Name",
+                value: boxName,
+                inline: true,
+              },
+              {
+                name: "Grade",
+                value: boxGrade,
+                inline: true,
+              },
+              {
+                name: "\u200b",
+                value: "\u200b",
+                inline: true,
+              },
+              {
+                name: "Contact Email",
+                value: boxEmail,
+                inline: true,
+              },
+              {
+                name: "Student ID",
+                value: idEmail,
+                inline: true,
+              },
+            ],
+            footer: {
+              icon_url:
+                "http://lymanrobotics.netlify.app/images/NavbarLogo.png",
+              text: "Hopefully they stay!",
             },
-            {
-              name: "Grade",
-              value: boxGrade,
-              inline: true,
-            },
-            {
-              name: "\u200b",
-              value: "\u200b",
-              inline: true,
-            },
-            {
-              name: "Contact Email",
-              value: boxEmail,
-              inline: true,
-            },
-            {
-              name: "Student ID",
-              value: idEmail,
-              inline: true,
-            },
-          ],
-          footer: {
-            text: "Hopefully they stay!",
-            icon_url: "http://lymanrobotics.netlify.app/images/NavbarLogo.png",
           },
-        },
-      ],
-    };
-    try {
+        ],
+      };
+
       request.send(JSON.stringify(params));
-    } catch (err) {
-      alert(
-        "Something went wrong! Please try again or contact joshuaew06@gmail.com so they know"
+      console.log(
+        `Discord webhook hopefully sucessfully sent since I don't have a way to get a promise return...`
       );
     }
 
-    emailjs
-      .send(
-        "service_o3m7mlh",
-        "template_1fnr06m",
-        {
-          grade: boxGrade,
-          name: boxName,
-          email: boxEmail,
-          id: idEmail,
-        },
-        "uq4kVKFRDwE7pFfsW"
-      )
-      .then(
-        function (response) {
-          alert("Your response has been sent!");
-        },
-        function (error) {
-          console.log(error);
-          alert(
-            "Something went wrong, please contact joshuaew06@gmail.com so he can know"
-          );
-        }
-      );
+    // ! Set to use email function
+    var useEmailCode = false;
 
+    // Email Code
+    if (useEmailCode) {
+      emailjs
+        .send(
+          "service_o3m7mlh",
+          "template_1fnr06m",
+          {
+            grade: boxGrade,
+            name: boxName,
+            email: boxEmail,
+            id: idEmail,
+          },
+          "uq4kVKFRDwE7pFfsW"
+        )
+        .then(
+          function (response) {
+            alert("Your response has been sent!");
+            console.log(
+              `Email sent!\nStatus:${response.status}\nText:${response.text}`
+            );
+          },
+          function (error) {
+            alert(
+              `Something went wrong, please email "joshuaew06@gmail.com" with your response \nError Code:${error.number}\nError Message:${error.message}`
+            );
+            console.log(`Email\nStatus:${error.number}\nText:${error.message}`);
+          }
+        );
+    }
+    // Clear boxes on submit
     document.getElementById("Current_GradeID").value = "";
     document.getElementById("NameID").value = "";
     document.getElementById("Preferred_Contact_EmailID").value = "";

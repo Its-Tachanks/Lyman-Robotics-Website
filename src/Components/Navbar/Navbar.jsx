@@ -62,10 +62,11 @@ class Navbar extends Component {
           </Link>
           <ul>
             <li>
-              <NavLink to="/schedule">Schedule *Under construction*</NavLink>
+              <NavLink to="/links">Links</NavLink>
             </li>
           </ul>
         </nav>
+        <div className="NavbarSpacer"></div>
       </React.Fragment>
     );
   };

@@ -17,8 +17,6 @@ $(document).on("scroll", function () {
     var tag = tags[i];
     if ($(tag).position().top < pageBottom - 30) {
       $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
     }
   }
 });
@@ -65,8 +63,6 @@ window.addEventListener("load", function() {
     var tag = tags[i];
     if ($(tag).isInViewport()) {
       $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
     }
   }
 });

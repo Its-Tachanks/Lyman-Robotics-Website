@@ -24,44 +24,11 @@ body {
   text-align: center;
 }
 
-.LandingPageTitleDiv {
+.LinksPageTitleDiv {
   font-size: 56px;
   text-align: center;
   --pad: 1.5rem;
   padding-left: var(--pad);
   padding-right: var(--pad);
   padding-top: .5rem
-}
-
-.TitleDescLand {
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 768px) {
-  .LandingPageTitleDiv {
-    font-size: 48px;
-    --pad: 1.5rem;
-    padding-left: var(--pad);
-    padding-right: var(--pad);
-  }
-  .LandingPageTitleDiv {
-    font-size: 40px;
-  }
-}
-
-.timesDiv {
-  --margin: 10vw;
-  margin-left: var(--margin);
-  margin-right: var(--margin);
-  text-align: center;
-}
-
-.DaysList {
-  text-align: center;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.SignUpTlt {
-  padding-bottom: .75rem;
 }

@@ -102,7 +102,7 @@ body {
 }
 
 .NavbarSpacer {
-  height: 4rem;
+  height: 3.75rem;
   width: auto;
   background-color: var(--eerie-black);
 }

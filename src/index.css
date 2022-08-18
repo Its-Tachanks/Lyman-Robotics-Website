@@ -215,3 +215,24 @@
 .LoadButton-pushable_CloseButton:focus:not(:focus-visible) {
   outline: none;
 }
+
+hr {
+  min-width: 60%;
+  max-width: 60%;
+  margin: auto;
+  color: var(--blue);
+  background-color: var(--blue);
+  border-color: var(--blue);
+
+  height: 2px;
+  --hrMarginVert: 0.75rem;
+  margin-top: var(--hrMarginVert);
+  margin-bottom: var(--hrMarginVert);
+}
+
+@media only screen and (max-width: 768px) {
+  hr {
+    min-width: 80%;
+    max-width: 80%;
+  }
+}
