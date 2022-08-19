@@ -45,7 +45,40 @@ class AboutPage extends Component {
           </div>
         </div>
         <div className="FadeInLoad">
-          <p>VAL DO UR THIMNG</p>
+          <hr />
+          <h2>General Info</h2>
+          <div className="AboutRow">
+            <div className="AboutColumn PicturesColumn">
+              <img src="../images/About/Us.png"></img>
+            </div>
+            <div className="AboutColumn TextColumn">
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+        <div className="FadeInLoad">
+          <hr />
+          <h2>Building Robots</h2>
+          <div className="AboutRow">
+            <div className="AboutColumn TextColumn">
+              <p>Text</p>
+            </div>
+            <div className="AboutColumn PicturesColumn">
+              <img src="../images/About/Robot1.png"></img>
+            </div>
+          </div>
+        </div>
+        <div className="FadeInLoad">
+          <hr />
+          <h2>Coding</h2>
+          <div className="AboutRow">
+            <div className="AboutColumn PicturesColumn">
+              <img src="../images/Languages/Java.png"></img>
+            </div>
+            <div className="AboutColumn TextColumn">
+              <p>Text</p>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );

@@ -33,15 +33,22 @@ body {
   padding-top: .5rem
 }
 
-.PersonRow {
+.AboutRow {
   display: flex;
   padding-bottom: 2.5rem;
+  --margR: 25%;
+  margin-left: var(--margR);
+  margin-right: var(--margR);
 }
 
-.PersonColumn {
+.AboutColumn {
   flex: 50%;
 }
 
 @media only screen and (max-width: 768px) {
-
+  .AboutRow {
+    --margR: 10%;
+    margin-left: var(--margR);
+    margin-right: var(--margR);
+  }
 }
