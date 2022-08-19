@@ -47,6 +47,11 @@ body {
   .LandingPageTitleDiv {
     font-size: 40px;
   }
+  #ValParagraphIntro {
+    --margI: 10%;
+    margin-left: var(--margI);
+    margin-right: var(--margI);
+  }
 }
 
 .timesDiv {
