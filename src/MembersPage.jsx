@@ -27,12 +27,20 @@ class MembersPage extends Component {
         image2: "../images/Members/Val.png",
       },
       {
-        name1: "Logan...",
+        name1: "Logan Weil",
         grade1: "10th",
         image1: "../images/Members/Logan.png",
         name2: "Ani Subbert",
         grade2: "10th",
         image2: "../images/Members/Ani.png",
+      },
+      {
+        name1: "Kylie ...",
+        grade1: "12th",
+        image1: "../images/Members/Kylie.png",
+        name2: "",
+        grade2: "",
+        image2: "",
       },
     ],
   };
