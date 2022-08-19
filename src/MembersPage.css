@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-.LinksPageTitleDiv {
+.MembersPageTitleDiv {
   font-size: 56px;
   text-align: center;
   --pad: 1.5rem;
@@ -33,36 +33,36 @@ body {
   padding-top: .5rem
 }
 
-.LinkRow {
+.PersonRow {
   display: flex;
   padding-bottom: 2.5rem;
 }
 
-.LinkColumn {
+.PersonColumn {
   flex: 50%;
 }
 
-.ImageLink {
+.PersonImage {
   height: 200px;
-  width: auto;
+  width: 200px;
   border-radius: 8px;
   background-color: var(--eerie-black-lighter);
-  border: .1rem solid var(--yellow);
+  border: .15rem solid var(--blue);
 }
 
-.LinkLi {
+.PersonLi {
   overflow: hidden;
   height: 200px;
 }
 
 .AllLinks {
-  --mrg: 20rem;
+  --mrg: 25%;
   margin-left: var(--mrg);
   margin-right: var(--mrg);
 }
 
 @media only screen and (max-width: 768px) {
-  .ImageLink {
+  .PersonImage {
     height: 140px;
     width: auto;
   }
@@ -76,4 +76,20 @@ body {
   .LinkRow {
     padding-bottom: 0rem;
   }
+  
+  .PersonName {
+    font-size: 18px;
+  }
+
+  .PersonDesc {
+    font-size: 14px;
+  }
+}
+
+.PersonDesc {
+  text-align: center;
+}
+
+.PersonName {
+  text-decoration: underline;
 }

@@ -64,6 +64,9 @@ class Navbar extends Component {
             <li>
               <NavLink to="/links">Links</NavLink>
             </li>
+            <li>
+              <NavLink to="/members">Members</NavLink>
+            </li>
           </ul>
         </nav>
         <div className="NavbarSpacer"></div>

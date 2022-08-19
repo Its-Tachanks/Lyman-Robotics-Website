@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import $ from "jquery";
 
 // CSS Import
-import "./LinksPage.css";
+import "./MembersPage.css";
 
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
@@ -15,24 +15,14 @@ import Meetings from "./Components/Meetings/Meetings";
 // Library Imports
 import ReactTypingEffect from "react-typing-effect";
 
-class LinksPage extends Component {
+class MembersPage extends Component {
   state = {
-    links: [
+    people: [
       {
-        image1: "../images/Languages/CSS.png",
-        text1: "Test 1",
-        link1: "https://tachanks.xyz",
-        image2: "../images/Languages/HTML.png",
-        text2: "Test 2",
-        link2: "https://tachanks.xyz",
-      },
-      {
-        image1: "../images/Languages/JS.png",
-        text1: "Test 3",
-        link1: "https://tachanks.xyz",
-        image2: "../images/Languages/Python.png",
-        text2: "Test 4",
-        link2: "https://tachanks.xyz",
+        name: "Joshua Evenden-Wallick",
+        grade: "11th",
+        image: "../images/Members/Josh.png",
+        desc: "Someone's concoise (since no one actually wants to read all of it) description here",
       },
     ],
   };
@@ -43,7 +33,7 @@ class LinksPage extends Component {
         <div className="FadeInLoad">
           <div className="LinksPageTitleDiv">
             <ReactTypingEffect
-              text={["Links"]}
+              text={["Members"]}
               eraseSpeed="70"
               typingDelay="800"
               speed="180"
@@ -55,27 +45,24 @@ class LinksPage extends Component {
           </div>
         </div>
         <div className="FadeInLoad AllLinks">
-          {this.state.links.map((linkObject, index) => (
-            <div className="LinkRow" key={linkObject.text1 + "hi"}>
+          {this.state.people.map((peopleObject, index) => (
+            <div className="PersonRow" key={peopleObject.text1 + "hi"}>
               {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
               <ul
                 style={{ textAlign: "center", listStyle: "none" }}
-                className="LinkColumn"
+                className="PersonColumn"
               >
-                <li className="LinkLi">
-                  <a href={linkObject.link1}>
-                    <img src={linkObject.image1} className="ImageLink"></img>
-                  </a>
+                <li className="PersonLi">
+                  <img src={peopleObject.image} className="PersonImage"></img>
                 </li>
               </ul>
               <ul
                 style={{ textAlign: "center", listStyle: "none" }}
-                className="LinkColumn"
+                className="PersonColumn"
               >
-                <li className="LinkLi">
-                  <a href={linkObject.link2}>
-                    <img src={linkObject.image2} className="ImageLink"></img>
-                  </a>
+                <li className="PersonLi">
+                  <h2 className="PersonName">{peopleObject.name}</h2>
+                  <p className="PersonDesc">{peopleObject.desc}</p>
                 </li>
               </ul>
             </div>
@@ -94,4 +81,4 @@ class LinksPage extends Component {
   }
 }
 
-export default LinksPage;
+export default MembersPage;

@@ -8,6 +8,7 @@ import {
 
 import LandingPage from "./LandingPage";
 import LinksPage from "./LinksPage";
+import MembersPage from "./MembersPage";
 
 import "./index.css"
 
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/links" element={<LinksPage />} />
+      <Route path="/members" element={<MembersPage />} />
     </Routes>
   </BrowserRouter>
 );
