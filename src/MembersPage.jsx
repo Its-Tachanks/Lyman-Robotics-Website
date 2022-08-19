@@ -19,10 +19,20 @@ class MembersPage extends Component {
   state = {
     people: [
       {
-        name: "Joshua Evenden-Wallick",
-        grade: "11th",
-        image: "../images/Members/Josh.png",
-        desc: "Someone's concoise (since no one actually wants to read all of it) description here",
+        name1: "Joshua Evenden-Wallick",
+        grade1: "11th",
+        image1: "../images/Members/Josh.png",
+        name2: "Val Rojas",
+        grade2: "10th",
+        image2: "../images/Members/Val.png",
+      },
+      {
+        name1: "Logan...",
+        grade1: "10th",
+        image1: "../images/Members/Logan.png",
+        name2: "Ani Subbert",
+        grade2: "10th",
+        image2: "../images/Members/Ani.png",
       },
     ],
   };
@@ -53,7 +63,9 @@ class MembersPage extends Component {
                 className="PersonColumn"
               >
                 <li className="PersonLi">
-                  <img src={peopleObject.image} className="PersonImage"></img>
+                  <h2 className="PersonName">{peopleObject.name1}</h2>
+                  <p className="PersonDesc">{peopleObject.grade1 + " grade"}</p>
+                  <img src={peopleObject.image1} className="PersonImage"></img>
                 </li>
               </ul>
               <ul
@@ -61,8 +73,9 @@ class MembersPage extends Component {
                 className="PersonColumn"
               >
                 <li className="PersonLi">
-                  <h2 className="PersonName">{peopleObject.name}</h2>
-                  <p className="PersonDesc">{peopleObject.desc}</p>
+                  <h2 className="PersonName">{peopleObject.name2}</h2>
+                  <p className="PersonDesc">{peopleObject.grade2 + " grade"}</p>
+                  <img src={peopleObject.image2} className="PersonImage"></img>
                 </li>
               </ul>
             </div>

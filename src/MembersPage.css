@@ -43,8 +43,8 @@ body {
 }
 
 .PersonImage {
-  height: 200px;
-  width: 200px;
+  height: 80%;
+  width: auto;
   border-radius: 8px;
   background-color: var(--eerie-black-lighter);
   border: .15rem solid var(--blue);
@@ -52,7 +52,7 @@ body {
 
 .PersonLi {
   overflow: hidden;
-  height: 200px;
+  height: 300px;
 }
 
 .AllLinks {
@@ -61,10 +61,19 @@ body {
   margin-right: var(--mrg);
 }
 
+.PersonDesc {
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   .PersonImage {
-    height: 140px;
+    height: 60%;
     width: auto;
+  }
+
+  .PersonLi {
+    overflow: hidden;
+    height: 200px;
   }
 
   .AllLinks {
@@ -84,12 +93,4 @@ body {
   .PersonDesc {
     font-size: 14px;
   }
-}
-
-.PersonDesc {
-  text-align: center;
-}
-
-.PersonName {
-  text-decoration: underline;
 }
