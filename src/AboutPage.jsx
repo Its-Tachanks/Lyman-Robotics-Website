@@ -16,34 +16,6 @@ import Meetings from "./Components/Meetings/Meetings";
 import ReactTypingEffect from "react-typing-effect";
 
 class AboutPage extends Component {
-  state = {
-    people: [
-      {
-        name: "Joshua Evenden-Wallick",
-        grade: "11th",
-        image: "../images/Members/Josh.png",
-        desc: "This is my third time being in this club with past FLL experiences. I am a rather introverted person who enjoys playing video games and watching shows.",
-      },
-      {
-        name: "Val Rojas Acevedo",
-        grade: "10th",
-        image: "../images/Members/Val.png",
-        desc: "This is my second year doing robotics with Lyman. I had a lot of fun last year doing mostly code and want to do the same this year.",
-      },
-      {
-        name: "Logan Weil",
-        grade: "10th",
-        image: "../images/Members/Logan.png",
-        desc: "This is my second year with Lyman Robotics. Last year I was a driver and builder, so I'm hoping to get more coding experience this time around.",
-      },
-      {
-        name: "Ani Subbert",
-        grade: "10th",
-        image: "../images/Members/Ani.png",
-        desc: "My favorite part of robotics is the building but I also enjoy programming. I'm not the best at getting around on the program, but I hope to get better at it.",
-      },
-    ],
-  };
   render() {
     return (
       <div className="AboutPageDiv">
