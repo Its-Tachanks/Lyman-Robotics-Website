@@ -57,7 +57,7 @@ class AboutPage extends Component {
             >
               <li className="AboutLi">
                 {/* VAL CHANGE HERE */}
-                <p>We are a pretty dedicated and diverse team who works together to build and code the best robots we can. Our club is student-run, so every student gets a chance to participate and claim an important role in the process. Our officer posts are also constantly changing, so there is always room to do more! </p>
+                <p>We are a pretty dedicated and diverse team who works together to build and code the best robots we can. Our club is student-run, so every student gets a chance to participate and claim an important role in the process. Our officer posts are also constantly changing, so there are always ways to do more! </p>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ class AboutPage extends Component {
             >
               <li className="AboutLi">
                 {/* VAL CHANGE HERE */}
-                <p>We build our robots from scratch, mainly for the FTC competition. Every member of the team gets a chance to participate in the buiding process and to learn the basics about each part. We, as a team, believe in the hands-on approach to learning, so we all pitch in whenit is time to build.</p>
+                <p>We build our robots from scratch, mainly for the FTC competition. Every member of the team gets a chance to participate in the buiding process and to learn the basics about each part. We, as a team, believe in the hands-on approach to learning, so we all pitch in when it is time to build.</p>
               </li>
             </ul>
             <ul
@@ -113,7 +113,7 @@ class AboutPage extends Component {
             >
               <li className="AboutLi">
                 {/* Your comments are unnecessarily snappy, Tosh */}
-                <p>If building is not necessarily your thing, or you are looking for something more, we code! Members also all get a change to contribute to the code, which is as important as the build. No prior conding experience? That is not an issue, since out experienced members would love to teach you all about how we do things.</p>
+                <p>If building is not necessarily your thing, or you are looking for something more, we code! Members also all get a change to contribute to the code, which is as important as the build. No prior coding experience? That is not an issue, since out experienced members would love to teach you all about how we do things.</p>
               </li>
             </ul>
           </div>
