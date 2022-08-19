@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap');
+
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --eerie-black-lighter: #2b2b2b;
+  --lightBlue: #116DD2;
+  --blue: #1642BF;
+  --darkBlue: #000082;
+  --darkYellow: #F0B400;
+  --yellow: #FCCA0C;
+  --lighYellow: #F9E07E;
+  --cultured: #f5f3f4;
+  --white: #ffffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--eerie-black);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: var(--cultured);
+  text-align: center;
+}
+
+.MembersPageTitleDiv {
+  font-size: 56px;
+  text-align: center;
+  --pad: 1.5rem;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+  padding-top: .5rem
+}
+
+.PersonRow {
+  display: flex;
+  padding-bottom: 2.5rem;
+}
+
+.PersonColumn {
+  flex: 50%;
+}
+
+.PersonImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: var(--eerie-black-lighter);
+  border: .15rem solid var(--blue);
+}
+
+.PersonLi {
+  overflow: hidden;
+  height: 200px;
+}
+
+.AllLinks {
+  --mrg: 25%;
+  margin-left: var(--mrg);
+  margin-right: var(--mrg);
+}
+
+@media only screen and (max-width: 768px) {
+  .PersonImage {
+    height: 140px;
+    width: auto;
+  }
+
+  .AllLinks {
+    --mrg: 1rem;
+    margin-left: var(--mrg);
+    margin-right: var(--mrg);
+  }
+
+  .LinkRow {
+    padding-bottom: 0rem;
+  }
+  
+  .PersonName {
+    font-size: 18px;
+  }
+
+  .PersonDesc {
+    font-size: 14px;
+  }
+}
+
+.PersonDesc {
+  text-align: center;
+}
+
+.PersonName {
+  text-decoration: underline;
+}

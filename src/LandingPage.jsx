@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 // eslint-disable-next-line
 import $ from "jquery";
@@ -37,9 +38,9 @@ class LandingPage extends Component {
           <hr />
           <h2>What we do</h2>
           <p>
-            Someone give me a paragraph to put here, dont really feel like
-            writing one that isnt 2 words long
+              We are an independent, student-run club that focuses on coding, building, and testing robots. Everyone is welcome, since there is no better way to learn than to participate. There is a spot for anyone who wants to work and be part of the multiple competitions we do on regional, national, and possibly global level.
           </p>
+          <NavLink to="/about">Learn More</NavLink>
         </div>
         <div className="FadeInLoad">
           <hr />
