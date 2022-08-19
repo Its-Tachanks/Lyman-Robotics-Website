@@ -36,6 +36,7 @@ body {
 .AboutRow {
   display: flex;
   padding-bottom: 2.5rem;
+  
   --margR: 25%;
   margin-left: var(--margR);
   margin-right: var(--margR);
@@ -45,10 +46,31 @@ body {
   flex: 50%;
 }
 
+.AboutLi>img {
+  height: 200px;
+  width: auto;
+  border-radius: 8px;
+  border: .1rem solid var(--yellow);
+}
+
 @media only screen and (max-width: 768px) {
   .AboutRow {
     --margR: 10%;
     margin-left: var(--margR);
     margin-right: var(--margR);
   }
+  .AboutLi>img {
+    height: 150px;
+    width: auto;
+  }
+  .AboutPageDiv p {
+    font-size: 14px;
+  }
+  #UsPic {
+    height: 110px;
+  }
+}
+
+.AboutPageDiv h2 {
+  padding-bottom: 1rem;
 }

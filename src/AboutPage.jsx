@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import $ from "jquery";
 
 // CSS Import
-import "./MembersPage.css";
+import "./AboutPage.css";
 
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
@@ -28,7 +28,7 @@ class AboutPage extends Component {
   };
   render() {
     return (
-      <React.Fragment>
+      <div className="AboutPageDiv">
         <Navbar />
         <div className="FadeInLoad">
           <div className="LinksPageTitleDiv">
@@ -48,24 +48,26 @@ class AboutPage extends Component {
           <hr />
           <h2>General Info</h2>
           <div className="AboutRow">
+            {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="PicturesColumn">
-                  <img src="../images/About/Us.png"></img>
-                </div>
+              <li className="AboutLi">
+                <img
+                  src="../images/About/Us.png"
+                  className="AboutImage"
+                  id="UsPic"
+                ></img>
               </li>
             </ul>
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="TextColumn">
-                  <p>Text</p>
-                </div>
+              <li className="AboutLi">
+                {/* VAL CHANGE HERE */}
+                <p>Stuff about us and our members</p>
               </li>
             </ul>
           </div>
@@ -74,55 +76,59 @@ class AboutPage extends Component {
           <hr />
           <h2>Building Robots</h2>
           <div className="AboutRow">
+            {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="PicturesColumn">
-                  <img src="../images/About/Robot1.png"></img>
-                </div>
+              <li className="AboutLi">
+                {/* VAL CHANGE HERE */}
+                <p>Stuff about robots and building</p>
               </li>
             </ul>
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="TextColumn">
-                  <p>Text</p>
-                </div>
+              <li className="AboutLi">
+                <img
+                  src="../images/About/Robot1.png"
+                  className="AboutImage"
+                  id="UsPic"
+                ></img>
               </li>
             </ul>
           </div>
         </div>
         <div className="FadeInLoad">
           <hr />
-          <h2>Coding</h2>
+          <h2>Coding Robots</h2>
           <div className="AboutRow">
+            {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="PicturesColumn">
-                  <img src="../images/Languages/Java.png"></img>
-                </div>
+              <li className="AboutLi">
+                <img
+                  src="../images/About/Code.png"
+                  className="AboutImage"
+                  id="UsPic"
+                ></img>
               </li>
             </ul>
             <ul
               style={{ textAlign: "center", listStyle: "none" }}
               className="AboutColumn"
             >
-              <li className="AboutPage">
-                <div className="TextColumn">
-                  <p>Text</p>
-                </div>
+              <li className="AboutLi">
+                {/* VAL CHANGE HERE */}
+                <p>Stuff about coding the robots</p>
               </li>
             </ul>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 
