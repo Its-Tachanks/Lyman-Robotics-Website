@@ -38,9 +38,9 @@ class MembersPage extends Component {
         name1: "Kylie Perrone",
         grade1: "12th",
         image1: "../images/Members/Kylie.png",
-        name2: "",
-        grade2: "",
-        image2: "",
+        name2: "Lam Nguyen",
+        grade2: "12th",
+        image2: "../images/Members/Lam.png",
       },
     ],
   };
