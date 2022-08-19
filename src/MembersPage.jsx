@@ -35,7 +35,7 @@ class MembersPage extends Component {
         image2: "../images/Members/Ani.png",
       },
       {
-        name1: "Kylie ...",
+        name1: "Kylie Perrone",
         grade1: "12th",
         image1: "../images/Members/Kylie.png",
         name2: "",
