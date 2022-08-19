@@ -48,36 +48,78 @@ class AboutPage extends Component {
           <hr />
           <h2>General Info</h2>
           <div className="AboutRow">
-            <div className="AboutColumn PicturesColumn">
-              <img src="../images/About/Us.png"></img>
-            </div>
-            <div className="AboutColumn TextColumn">
-              <p>Text</p>
-            </div>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="PicturesColumn">
+                  <img src="../images/About/Us.png"></img>
+                </div>
+              </li>
+            </ul>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="TextColumn">
+                  <p>Text</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="FadeInLoad">
           <hr />
           <h2>Building Robots</h2>
           <div className="AboutRow">
-            <div className="AboutColumn TextColumn">
-              <p>Text</p>
-            </div>
-            <div className="AboutColumn PicturesColumn">
-              <img src="../images/About/Robot1.png"></img>
-            </div>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="PicturesColumn">
+                  <img src="../images/About/Robot1.png"></img>
+                </div>
+              </li>
+            </ul>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="TextColumn">
+                  <p>Text</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="FadeInLoad">
           <hr />
           <h2>Coding</h2>
           <div className="AboutRow">
-            <div className="AboutColumn PicturesColumn">
-              <img src="../images/Languages/Java.png"></img>
-            </div>
-            <div className="AboutColumn TextColumn">
-              <p>Text</p>
-            </div>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="PicturesColumn">
+                  <img src="../images/Languages/Java.png"></img>
+                </div>
+              </li>
+            </ul>
+            <ul
+              style={{ textAlign: "center", listStyle: "none" }}
+              className="AboutColumn"
+            >
+              <li className="AboutPage">
+                <div className="TextColumn">
+                  <p>Text</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </React.Fragment>
