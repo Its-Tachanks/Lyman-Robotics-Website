@@ -65,3 +65,9 @@ body {
 .SignUpTlt {
   padding-bottom: .75rem;
 }
+
+#ValParagraphIntro {
+  --margI: 25%;
+  margin-left: var(--margI);
+  margin-right: var(--margI);
+}

@@ -42,54 +42,6 @@ body {
   flex: 50%;
 }
 
-.PersonImage {
-  height: 200px;
-  width: 200px;
-  border-radius: 8px;
-  background-color: var(--eerie-black-lighter);
-  border: .15rem solid var(--blue);
-}
-
-.PersonLi {
-  overflow: hidden;
-  height: 200px;
-}
-
-.AllLinks {
-  --mrg: 25%;
-  margin-left: var(--mrg);
-  margin-right: var(--mrg);
-}
-
 @media only screen and (max-width: 768px) {
-  .PersonImage {
-    height: 140px;
-    width: auto;
-  }
 
-  .AllLinks {
-    --mrg: 1rem;
-    margin-left: var(--mrg);
-    margin-right: var(--mrg);
-  }
-
-  .LinkRow {
-    padding-bottom: 0rem;
-  }
-  
-  .PersonName {
-    font-size: 18px;
-  }
-
-  .PersonDesc {
-    font-size: 14px;
-  }
-}
-
-.PersonDesc {
-  text-align: center;
-}
-
-.PersonName {
-  text-decoration: underline;
 }
