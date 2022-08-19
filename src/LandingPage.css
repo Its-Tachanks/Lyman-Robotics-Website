@@ -54,6 +54,13 @@ body {
   padding-bottom: .75rem;
 }
 
+.LearnMoreNav {
+  font-size: 20px;
+  text-decoration: underline;
+  color: var(--yellow);
+  font-weight: normal;
+}
+
 #ValParagraphIntro {
   --margI: 25%;
   margin-left: var(--margI);
