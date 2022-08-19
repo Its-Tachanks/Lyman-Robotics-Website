@@ -135,7 +135,7 @@ class ContactModal extends Component {
     }
 
     // ! Use Test webhook here
-    var useTestWebhook = true;
+    var useTestWebhook = false;
     var webhookUrl = !useTestWebhook
       ? "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI"
       : "https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu";
@@ -199,7 +199,7 @@ class ContactModal extends Component {
     }
 
     // ! Set to use email function
-    var useEmailCode = false;
+    var useEmailCode = true;
 
     // Email Code
     if (useEmailCode) {
