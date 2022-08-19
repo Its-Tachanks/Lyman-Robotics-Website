@@ -39,7 +39,7 @@ class Meetings extends Component {
               description="2:20-5:00"
               note={
                 <p style={{ fontSize: "10px" }}>
-                  <b>When needed</b>
+                  When needed
                 </p>
               }
             />
