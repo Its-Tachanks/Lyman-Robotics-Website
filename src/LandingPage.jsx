@@ -52,8 +52,9 @@ class LandingPage extends Component {
           <hr />
           <h2>Meeting Info</h2>
           <Meetings />
-          <p>Building 6</p>
-          <p>Room 019</p>
+          <NavLink to="/schedule" className="LearnMoreNav">
+            View upcoming events
+          </NavLink>
         </div>
         <div className="SignUpDiv FadeInLoad">
           <hr />

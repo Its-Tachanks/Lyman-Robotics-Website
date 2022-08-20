@@ -10,6 +10,7 @@ import LandingPage from "./LandingPage";
 import LinksPage from "./LinksPage";
 import MembersPage from "./MembersPage";
 import AboutPage from "./AboutPage";
+import SchedulePage from "./SchedulePage";
 
 import "./index.css"
 
@@ -21,6 +22,7 @@ root.render(
       <Route path="/links" element={<LinksPage />} />
       <Route path="/members" element={<MembersPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/schedule" element={<SchedulePage />} />
     </Routes>
   </BrowserRouter>
 );
