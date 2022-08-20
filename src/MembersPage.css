@@ -67,12 +67,12 @@ body {
 
 @media only screen and (max-width: 768px) {
   .PersonImage {
-    height: 60%;
+    height: 70%;
     width: auto;
   }
 
   .PersonLi {
-    overflow: hidden;
+    overflow: visible;
     height: 200px;
   }
 
