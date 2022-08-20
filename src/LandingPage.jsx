@@ -70,6 +70,7 @@ class LandingPage extends Component {
             title="Lyman Robotics Club Sign Up"
           />
         </div>
+        <div className="EndSpacer" style={{ marginTop: "2rem" }}></div>
       </React.Fragment>
     );
   }

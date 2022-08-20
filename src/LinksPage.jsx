@@ -19,20 +19,12 @@ class LinksPage extends Component {
   state = {
     links: [
       {
-        image1: "../images/Languages/CSS.png",
-        text1: "Test 1",
-        link1: "https://tachanks.xyz",
-        image2: "../images/Languages/HTML.png",
-        text2: "Test 2",
-        link2: "https://tachanks.xyz",
-      },
-      {
-        image1: "../images/Languages/JS.png",
-        text1: "Test 3",
-        link1: "https://tachanks.xyz",
-        image2: "../images/Languages/Python.png",
-        text2: "Test 4",
-        link2: "https://tachanks.xyz",
+        image1: "../images/Links/Discord.png",
+        text1: "Join our Discord",
+        link1: "https://discord.gg/q6cqSP2jCN",
+        image2: "../images/Links/First.png",
+        text2: "FTC Website",
+        link2: "https://www.firstinspires.org/robotics/ftc",
       },
     ],
   };
@@ -54,18 +46,28 @@ class LinksPage extends Component {
             />
           </div>
         </div>
-        <div className="FadeInLoad AllLinks">
+        <div className=" AllLinks">
           {this.state.links.map((linkObject, index) => (
-            <div className="LinkRow" key={linkObject.text1 + "hi"}>
+            <div className="LinkRow FadeInLoad" key={linkObject.text1 + "hi"}>
               {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
               <ul
                 style={{ textAlign: "center", listStyle: "none" }}
                 className="LinkColumn"
               >
                 <li className="LinkLi">
-                  <a href={linkObject.link1}>
-                    <img src={linkObject.image1} className="ImageLink"></img>
-                  </a>
+                  <div className="Container">
+                    <a
+                      href={linkObject.link1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={linkObject.image1}
+                        className="ImageLink ScaleHover"
+                      ></img>
+                      <div className="CenteredText">{linkObject.text1}</div>
+                    </a>
+                  </div>
                 </li>
               </ul>
               <ul
@@ -73,9 +75,19 @@ class LinksPage extends Component {
                 className="LinkColumn"
               >
                 <li className="LinkLi">
-                  <a href={linkObject.link2}>
-                    <img src={linkObject.image2} className="ImageLink"></img>
-                  </a>
+                  <div className="Container">
+                    <a
+                      href={linkObject.link2}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={linkObject.image2}
+                        className="ImageLink ScaleHover"
+                      ></img>
+                      <div className="CenteredText">{linkObject.text2}</div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

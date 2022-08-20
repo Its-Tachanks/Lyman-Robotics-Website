@@ -47,13 +47,41 @@ body {
   width: auto;
   border-radius: 8px;
   background-color: var(--eerie-black-lighter);
-  border: .1rem solid var(--yellow);
+  border: .25rem solid var(--blue);
 }
 
 .LinkLi {
-  overflow: hidden;
   height: 200px;
 }
+
+.Container {
+  position: relative;
+  width: auto;
+  height: 200px;
+  transition: transform .2s;
+}
+
+.Container:hover {
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -webkit-transform: scale(1.25);
+  /* Safari 3-8 */
+  transform: scale(1.25);
+}
+
+.CenteredText {
+  background-color: rgba(0, 0, 130, 0.8);
+  border-radius: 8px;
+  color: var(--cultured);
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: .25rem solid black;
+}
+
+
 
 .AllLinks {
   --mrg: 20rem;
@@ -75,5 +103,14 @@ body {
 
   .LinkRow {
     padding-bottom: 0rem;
+  }
+
+  .CenteredText {
+    padding: 0.1rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .25rem solid black;
   }
 }
