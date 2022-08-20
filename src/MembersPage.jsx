@@ -42,6 +42,14 @@ class MembersPage extends Component {
         grade2: "12th",
         image2: "../images/Members/Lam.png",
       },
+      {
+        name1: "Alana Ali",
+        grade1: "12th",
+        image1: "../images/Members/Alana.png",
+        name2: "Chloe Haye",
+        grade2: "10th",
+        image2: "../images/Members/Chloe.png",
+      },
     ],
   };
   render() {

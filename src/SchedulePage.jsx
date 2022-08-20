@@ -19,7 +19,7 @@ class SchedulePage extends Component {
         date: new Date("September 12 2022 2:20"),
         pmAm: "PM",
         location: "Room 06-019",
-        desc: "Introductory robotics meeting. All new and returning members are heavily encouraged to attend. We will discuss what we do within the club, how we manage it, divide up into roles, brainstorm, and more. Expect to end the meeting at 5:00.",
+        desc: "Introductory robotics meeting. All new and returning members are heavily encouraged to attend. We will discuss what we do within the club, how we manage it, divide up into roles, brainstorm, and more. Expect the meeting to end at 5:00.",
       },
     ],
   };
