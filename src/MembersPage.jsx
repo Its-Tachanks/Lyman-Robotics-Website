@@ -62,9 +62,12 @@ class MembersPage extends Component {
             />
           </div>
         </div>
-        <div className="FadeInLoad AllLinks">
+        <div className="AllLinks">
           {this.state.people.map((peopleObject, index) => (
-            <div className="PersonRow" key={peopleObject.text1 + "hi"}>
+            <div
+              className="PersonRow FadeInLoad"
+              key={peopleObject.text1 + "hi"}
+            >
               {/* I know it is using UL's for no reason, dont know why its like that but it works so idc, cry */}
               <ul
                 style={{ textAlign: "center", listStyle: "none" }}
