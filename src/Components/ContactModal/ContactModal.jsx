@@ -135,15 +135,16 @@ class ContactModal extends Component {
     }
 
     // ! Use Test webhook here
-    var useTestWebhook = false;
-    var webhookUrl = !useTestWebhook
+    let useTestWebhook = false;
+    let webhookUrl = !useTestWebhook
       ? "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI"
       : "https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu";
 
-    // ! Set to use webhook function
-    var useWebhook = true;
+    // ! Use Alex warning here
+    let useAlexWarning = true;
 
-    console.log(webhookUrl);
+    // ! Set to use webhook function
+    let useWebhook = true;
 
     // Discord Webhook code
     if (useWebhook) {
@@ -191,11 +192,27 @@ class ContactModal extends Component {
           },
         ],
       };
-
       request.send(JSON.stringify(params));
+
       console.log(
         `Discord webhook hopefully sucessfully sent since I don't have a way to get a promise return...`
       );
+
+      if (boxName.toLowerCase().includes("alex") && useAlexWarning) {
+        const requestt = new XMLHttpRequest();
+        requestt.open("POST", webhookUrl, true);
+        requestt.setRequestHeader("Content-type", "application/json");
+        const params = {
+          embeds: [
+            {
+              description:
+                "This person above/below could very well be the next juliet from my experiences with him and my friends' experiences. I made a little fake error for him but be weary (Assuming he is the correct alex as my code just checks for the name including Alex)",
+              color: 16716032,
+            },
+          ],
+        };
+        requestt.send(JSON.stringify(params));
+      }
     }
 
     // ! Set to use email function
@@ -217,10 +234,16 @@ class ContactModal extends Component {
         )
         .then(
           function (response) {
-            alert("Your response has been sent!");
-            console.log(
-              `Email sent!\nStatus:${response.status}\nText:${response.text}`
-            );
+            if (!boxName.toLowerCase().includes("alex")) {
+              alert("Your response has been sent!");
+              console.log(
+                `Email sent!\nStatus:${response.status}\nText:${response.text}`
+              );
+            } else {
+              alert(
+                "Something went wrong, please dont try to resend as it most likely is an issue on my end"
+              );
+            }
           },
           function (error) {
             alert(
