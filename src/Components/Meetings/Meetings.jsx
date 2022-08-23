@@ -37,11 +37,7 @@ class Meetings extends Component {
               title="Friday"
               link="/"
               description="2:20-5:00"
-              note={
-                <p style={{ fontSize: "10px" }}>
-                  When needed
-                </p>
-              }
+              note={<p style={{ fontSize: "10px" }}>When needed (Rarely)</p>}
             />
           </li>
         </ul>
