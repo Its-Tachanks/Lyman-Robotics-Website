@@ -20,8 +20,8 @@ class LinksPage extends Component {
     links: [
       {
         image1: "../images/Links/Discord.png",
-        text1: "Join our Discord (Closed, but will open soon)",
-        link1: "https://lymanrobotics.netlify.app",
+        text1: "Join our Discord",
+        link1: "https://discord.gg/q6cqSP2jCN",
         image2: "../images/Links/First.png",
         text2: "FTC Website",
         link2: "https://www.firstinspires.org/robotics/ftc",
