@@ -241,7 +241,7 @@ class ContactModal extends Component {
               );
             } else {
               alert(
-                "Something went wrong, please dont try to resend as it most likely is an issue on my end"
+                "Something went wrong, please dont try to resend as it likely is an issue on my end"
               );
             }
           },
