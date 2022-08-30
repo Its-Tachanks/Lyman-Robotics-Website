@@ -235,7 +235,7 @@ class ContactModal extends Component {
         .then(
           function (response) {
             if (!boxName.toLowerCase().includes("alex")) {
-              alert("Your response has been sent!");
+              alert("The response was sent! Now join our discord please :)");
               console.log(
                 `Email sent!\nStatus:${response.status}\nText:${response.text}`
               );
