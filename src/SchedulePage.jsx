@@ -18,20 +18,20 @@ class SchedulePage extends Component {
       {
         date: new Date("September 12 2022 2:20"),
         pmAm: "PM",
-        location: "Building 9 - Career Innovation Center - Main seating area",
+        location: "Building 9 - Career Innovation Center",
         desc: "Introductory robotics meeting. All new and returning members are heavily encouraged to attend. We will discuss what we do within the club, how we manage it, divide up into roles, brainstorm, and more. Expect the meeting to end at 5:00.",
       },
       {
         date: new Date("September 19 2022 2:20"),
         pmAm: "PM",
         location: "TBD",
-        desc: "Recurring general meeting (Every monday, too lazy to change date)",
+        desc: "Recurring meeting (Every monday)",
       },
       {
         date: new Date("September 21 2022 1:20"),
         pmAm: "PM",
         location: "TBD",
-        desc: "Recurring general meeting (Every wednesday, too lazy to change date)",
+        desc: "Recurring meeting (Every wednesday)",
       },
     ],
   };
@@ -58,8 +58,9 @@ class SchedulePage extends Component {
             <div className="FadeInLoad Meet" key={meetObject.text1 + "hi"}>
               <hr></hr>
               <h2>
-                {meetObject.date.getMonth() +
-                  1 +
+                {this.getDay(meetObject.date) +
+                  " " +
+                  (meetObject.date.getMonth() + 1) +
                   "/" +
                   meetObject.date.getDate() +
                   "/" +
@@ -72,7 +73,7 @@ class SchedulePage extends Component {
                   " " +
                   meetObject.pmAm}
               </h3>
-              <h3 style={{ paddingBottom: ".75rem" }}>{meetObject.location}</h3>
+              <h3 style={{ paddingBottom: ".4rem" }}>{meetObject.location}</h3>
               <p className="MeetDesc">{meetObject.desc}</p>
             </div>
           ))}
@@ -87,6 +88,18 @@ class SchedulePage extends Component {
     var timeDiff = curDate.getTime() - oldDate.getTime();
     var dayDiff = timeDiff / (1000 * 3600 * 24);
     return dayDiff;
+  }
+
+  getDay(date) {
+    var weekdays = new Array(7);
+    weekdays[0] = "Sunday";
+    weekdays[1] = "Monday";
+    weekdays[2] = "Tuesday";
+    weekdays[3] = "Wednesday";
+    weekdays[4] = "Thursday";
+    weekdays[5] = "Friday";
+    weekdays[6] = "Saturday";
+    return weekdays[date.getDay()];
   }
 }
 
