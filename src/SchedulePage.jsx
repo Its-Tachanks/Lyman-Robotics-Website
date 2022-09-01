@@ -24,13 +24,13 @@ class SchedulePage extends Component {
       {
         date: new Date("September 19 2022 2:20"),
         pmAm: "PM",
-        location: "Room 06-019",
+        location: "TBD",
         desc: "Recurring general meeting (Every monday, too lazy to change date)",
       },
       {
         date: new Date("September 21 2022 1:20"),
         pmAm: "PM",
-        location: "Room 06-019",
+        location: "TBD",
         desc: "Recurring general meeting (Every wednesday, too lazy to change date)",
       },
     ],
