@@ -140,9 +140,6 @@ class ContactModal extends Component {
       ? "https://discord.com/api/webhooks/1008877855112953957/PvpBeirRLMbmFpIfq8BjTkZaoouzgsBLSw9IymBnmHTVhom_kaZrdOw1rMF5B7NaqfhI"
       : "https://discord.com/api/webhooks/1008878393510596688/5l-f5gkw2pG1B9Aqoql2on-Gv8S2fXuxkrDsWHAAUOmx2AcaLjrlgeDQuYvntSi9TRgu";
 
-    // ! Use Alex warning here
-    let useAlexWarning = true;
-
     // ! Set to use webhook function
     let useWebhook = true;
 
@@ -197,22 +194,6 @@ class ContactModal extends Component {
       console.log(
         `Discord webhook hopefully sucessfully sent since I don't have a way to get a promise return...`
       );
-
-      if (boxName.toLowerCase().includes("alex") && useAlexWarning) {
-        const requestt = new XMLHttpRequest();
-        requestt.open("POST", webhookUrl, true);
-        requestt.setRequestHeader("Content-type", "application/json");
-        const params = {
-          embeds: [
-            {
-              description:
-                "This person above/below could very well be the next juliet from my experiences with him and my friends' experiences. I made a little fake error for him but be weary (Assuming he is the correct alex as my code just checks for the name including Alex)",
-              color: 16716032,
-            },
-          ],
-        };
-        requestt.send(JSON.stringify(params));
-      }
     }
 
     // ! Set to use email function
@@ -234,16 +215,10 @@ class ContactModal extends Component {
         )
         .then(
           function (response) {
-            if (!boxName.toLowerCase().includes("alex")) {
-              alert("The response was sent! Now join our discord please :)");
-              console.log(
-                `Email sent!\nStatus:${response.status}\nText:${response.text}`
-              );
-            } else {
-              alert(
-                "Something went wrong, please dont try to resend as it likely is an issue on my end"
-              );
-            }
+            alert("The response was sent! Now join our discord please :)");
+            console.log(
+              `Email sent!\nStatus:${response.status}\nText:${response.text}`
+            );
           },
           function (error) {
             alert(

@@ -26,6 +26,14 @@ class LinksPage extends Component {
         text2: "FTC Website",
         link2: "https://www.firstinspires.org/robotics/ftc",
       },
+      {
+        image1: "../images/Links/Github.png",
+        text1: "Our Github profile",
+        link1: "https://github.com/Lyman-Robotics",
+        image2: "",
+        text2: "",
+        link2: "",
+      },
     ],
   };
   render() {
@@ -64,6 +72,7 @@ class LinksPage extends Component {
                       <img
                         src={linkObject.image1}
                         className="ImageLink ScaleHover"
+                        alt="IgnoreThis:)"
                       ></img>
                       <div className="CenteredText">{linkObject.text1}</div>
                     </a>
@@ -84,6 +93,7 @@ class LinksPage extends Component {
                       <img
                         src={linkObject.image2}
                         className="ImageLink ScaleHover"
+                        alt="IgnoreThis"
                       ></img>
                       <div className="CenteredText">{linkObject.text2}</div>
                     </a>
