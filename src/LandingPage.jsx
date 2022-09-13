@@ -59,7 +59,8 @@ class LandingPage extends Component {
         <div className="SignUpDiv FadeInLoad">
           <hr />
           <h2 className="SignUpTlt">Join the club</h2>
-          <ContactModal
+<p>Sign ups are currently closed</p>
+{/*<ContactModal
             btnText="Click here to sign up!"
             inputs={[
               "Current_Grade",
@@ -69,7 +70,7 @@ class LandingPage extends Component {
             ]}
             desc="Enter your relative information in order to sign up"
             title="Lyman Robotics Club Sign Up"
-          />
+          />*/}
         </div>
         <div className="EndSpacer" style={{ marginTop: "2rem" }}></div>
       </React.Fragment>
