@@ -16,21 +16,15 @@ class SchedulePage extends Component {
   state = {
     events: [
       {
-        date: new Date("September 12 2022 2:20"),
-        pmAm: "PM",
-        location: "Building 9 - Career Innovation Center",
-        desc: "Introductory robotics meeting. All new and returning members are heavily encouraged to attend. We will discuss what we do within the club, how we manage it, divide up into roles, brainstorm, and more. Expect the meeting to end at 5:00.",
-      },
-      {
         date: new Date("September 19 2022 2:20"),
         pmAm: "PM",
-        location: "TBD",
+        location: "Building 9",
         desc: "Recurring meeting (Every monday)",
       },
       {
         date: new Date("September 21 2022 1:20"),
         pmAm: "PM",
-        location: "TBD",
+        location: "Building 9",
         desc: "Recurring meeting (Every wednesday)",
       },
     ],
