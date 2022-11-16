@@ -65,7 +65,7 @@ class LandingPage extends Component {
             inputs={[
               "Current_Grade",
               "Name",
-              "Preferred_Contact_Email",
+              "Personal_(Not_School)_Contact_Email",
               "Student_ID",
             ]}
             desc="Enter your relative information below"
