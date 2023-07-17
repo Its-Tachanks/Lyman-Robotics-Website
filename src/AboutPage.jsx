@@ -71,9 +71,7 @@ class AboutPage extends Component {
 									We build our robots from scratch, mainly for the FTC
 									competition. Every member of the team gets a chance to
 									participate in the buiding process and to learn the basics
-									about each part. We, as a team, believe in the hands-on
-									approach to learning, so we all pitch in when it is time to
-									build.
+									about each part.
 								</p>
 							</li>
 						</ul>
@@ -113,7 +111,6 @@ class AboutPage extends Component {
 							className="AboutColumn"
 						>
 							<li className="AboutLi">
-								{/* Your comments are unnecessarily snappy, Tosh */}
 								<p>
 									If building is not necessarily your thing, or you are looking
 									for something more, we code! Members also all get a change to
