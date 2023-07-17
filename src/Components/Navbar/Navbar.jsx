@@ -62,14 +62,14 @@ class Navbar extends Component {
 					</Link>
 					<ul>
 						<li>
-							<NavLink to="/links">Links</NavLink>
+							<a href="https://discord.gg/x4ygHV653p">Discord Invite</a>
 						</li>
-						<li>
+						{/* <li>
 							<NavLink to="/about">About</NavLink>
 						</li>
 						<li>
 							<NavLink to="/schedule">Schedule</NavLink>
-						</li>
+						</li> */}
 					</ul>
 				</nav>
 				<div className="NavbarSpacer"></div>
