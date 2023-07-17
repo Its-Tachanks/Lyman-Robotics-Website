@@ -72,10 +72,13 @@ class ContactModal extends Component {
 						</div>
 					))}
 					<p style={{ fontSize: "12px" }}>
+						Please join the discord server with the invite above, this is how we
+						communicate
+					</p>
+					<p>
 						<b>
-							Please join the discord server with the invite above, this is how
-							we communicate and do not use nor will we use any other
-							alternative.n
+							We will not use any other alternative whether that be email,
+							groupme, etc
 						</b>
 					</p>
 					<div className="subBtn">
