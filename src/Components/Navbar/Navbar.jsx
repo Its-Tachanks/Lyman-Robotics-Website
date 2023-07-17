@@ -62,7 +62,9 @@ class Navbar extends Component {
 					</Link>
 					<ul>
 						<li>
-							<a href="https://discord.gg/x4ygHV653p">Discord Invite</a>
+							<a href="https://discord.gg/x4ygHV653p" target="_blank">
+								Discord Invite
+							</a>
 						</li>
 						{/* <li>
 							<NavLink to="/about">About</NavLink>
