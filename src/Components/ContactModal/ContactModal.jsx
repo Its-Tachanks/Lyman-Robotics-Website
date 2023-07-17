@@ -62,7 +62,7 @@ class ContactModal extends Component {
 					overlayClassName="ContactModalOverlay"
 				>
 					<h2 className="ModalTitle">{this.props.title}</h2>
-					<div className="ModalDesc">{this.props.desc}</div>
+					{/* <div className="ModalDesc">{this.props.desc}</div> */}
 					{this.props.inputs.map((inputName, index) => (
 						<div className="msgInput" key={inputName + index}>
 							<input
@@ -72,7 +72,11 @@ class ContactModal extends Component {
 						</div>
 					))}
 					<p style={{ fontSize: "12px" }}>
-						<b>Please do not spam the button</b>
+						<b>
+							Please join the discord server with the invite above, this is how
+							we communicate and do not use nor will we use any other
+							alternative.n
+						</b>
 					</p>
 					<div className="subBtn">
 						<button
