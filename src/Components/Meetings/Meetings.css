@@ -1,13 +1,17 @@
 .MeetingRow {
 	display: flex;
-	width: 100%;
+	width: 55%;
 	align-items: center;
 	justify-content: center;
-	margin: 0 30% 0 30%;
+	margin: 0 20%;
 }
 
 .MeetingsColumn {
 	flex: 50%;
+}
+
+#Meet1 {
+	margin-right: 5%;
 }
 
 .MeetDay > h3 {
