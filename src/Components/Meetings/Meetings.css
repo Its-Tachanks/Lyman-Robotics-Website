@@ -1,29 +1,29 @@
 .MeetingRow {
-  display: flex;
+	display: flex;
 }
 
 .MeetingsColumn {
-  flex: 33%;
+	flex: 50%;
 }
 
-.MeetDay>h3 {
-  font-size: 20px;
-  text-decoration: none;
-  color: var(--yellow);
-  font-weight: normal;
+.MeetDay > h3 {
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--yellow);
+	font-weight: normal;
 }
 
 @media only screen and (max-width: 768px) {
-  .MeetDay>h3 {
-    font-size: 20px;
-  }
+	.MeetDay > h3 {
+		font-size: 20px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
-  #Meet1 {
-    margin-left: 25%;
-  }
-  #Meet3 {
-    margin-right: 25%;
-  }
+	#Meet1 {
+		margin-left: 25%;
+	}
+	#Meet3 {
+		margin-right: 25%;
+	}
 }
