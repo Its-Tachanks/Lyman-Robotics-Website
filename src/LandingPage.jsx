@@ -75,9 +75,7 @@ class LandingPage extends Component {
 				<div className="FadeInLoad">
 					<hr />
 					<h2>Next meeting</h2>
-					<NavLink to="/schedule" className="LearnMoreNav">
-						TBD
-					</NavLink>
+					<p className="LearnMoreNav">TBD</p>
 				</div>
 				<div className="EndSpacer" style={{ marginTop: "2rem" }}></div>
 			</React.Fragment>
