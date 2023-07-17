@@ -42,7 +42,8 @@ class LandingPage extends Component {
 						building, and testing robots. Everyone is welcome, since there is no
 						better way to learn than to participate. There is a spot for anyone
 						who wants to work and be part of the multiple competitions we do on
-						regional, national, and possibly global levels.
+						regional, and state levels throughout the FIRST TECH CHALLENGE
+						season.
 					</p>
 					<NavLink to="/about" className="LearnMoreNav">
 						Learn More
