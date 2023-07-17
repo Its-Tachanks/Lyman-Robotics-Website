@@ -1,9 +1,9 @@
 .MeetingRow {
 	display: flex;
-	width: 55%;
+	width: 60%;
 	align-items: center;
 	justify-content: center;
-	margin: 0 20%;
+	margin: 0 30%;
 }
 
 .MeetingsColumn {

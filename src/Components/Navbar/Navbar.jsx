@@ -66,9 +66,10 @@ class Navbar extends Component {
 								Discord Invite
 							</a>
 						</li>
-						{/* <li>
+						<li>
 							<NavLink to="/about">About</NavLink>
 						</li>
+						{/*
 						<li>
 							<NavLink to="/schedule">Schedule</NavLink>
 						</li> */}
