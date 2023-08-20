@@ -72,14 +72,15 @@ class ContactModal extends Component {
 						</div>
 					))}
 					<p style={{ fontSize: "12px" }}>
-						Please join the discord server with the invite above, this is how we
-						communicate
-					</p>
-					<p>
-						<b>
-							We will not use any other alternative whether that be email,
-							groupme, etc
-						</b>
+						Please join the{" "}
+						<a
+							href="https://discord.gg/x4ygHV653p"
+							target="_blank"
+							rel="noreferrer"
+						>
+							discord server
+						</a>
+						, this is how we communicate
 					</p>
 					<div className="subBtn">
 						<button
@@ -119,10 +120,12 @@ class ContactModal extends Component {
 	}
 
 	sendEmail() {
-		let boxGrade = document.getElementById("Current_GradeID").value;
 		let boxName = document.getElementById("NameID").value;
-		let boxEmail = document.getElementById("Preferred_Contact_EmailID").value;
-		let idEmail = document.getElementById("Student_IDID").value;
+		let boxGrade = document.getElementById("GradeID").value;
+		let boxEmail = document.getElementById("Personal_EmailID").value;
+		let boxExper = document.getElementById(
+			"Prior_experiences/knowledge_(if_any)ID"
+		).value;
 
 		if (
 			boxGrade === "" ||
@@ -131,8 +134,8 @@ class ContactModal extends Component {
 			boxName === undefined ||
 			boxEmail === "" ||
 			boxEmail === undefined ||
-			idEmail === "" ||
-			idEmail === undefined
+			boxExper === "" ||
+			boxExper === undefined
 		) {
 			this.setState({
 				modalIsOpen: false,
@@ -178,20 +181,19 @@ class ContactModal extends Component {
 								inline: true,
 							},
 							{
-								name: "Contact Email",
+								name: "Email",
 								value: boxEmail,
 								inline: true,
 							},
 							{
-								name: "Student ID",
-								value: idEmail,
+								name: "Prior experience",
+								value: boxExper,
 								inline: true,
 							},
 						],
 						footer: {
 							icon_url:
 								"http://lymanrobotics.netlify.app/images/NavbarLogo.png",
-							text: "Hopefully they stay!",
 						},
 					},
 				],
@@ -204,7 +206,7 @@ class ContactModal extends Component {
 		}
 
 		// ! Set to use email function
-		var useEmailCode = true;
+		var useEmailCode = false;
 
 		// Email Code
 		if (useEmailCode) {
@@ -216,7 +218,7 @@ class ContactModal extends Component {
 						grade: boxGrade,
 						name: boxName,
 						email: boxEmail,
-						id: idEmail,
+						id: boxExper,
 					},
 					"uq4kVKFRDwE7pFfsW"
 				)
@@ -236,10 +238,13 @@ class ContactModal extends Component {
 				);
 		}
 		// Clear boxes on submit
-		document.getElementById("Current_GradeID").value = "";
+		document.getElementById("GradeID").value = "";
 		document.getElementById("NameID").value = "";
-		document.getElementById("Preferred_Contact_EmailID").value = "";
-		document.getElementById("Student_IDID").value = "";
+		document.getElementById("Personal_EmailID").value = "";
+		document.getElementById("Prior_experiences/knowledge_(if_any)ID").value =
+			"";
+
+		alert("The response was sent! Join the discord now please");
 	}
 }
 

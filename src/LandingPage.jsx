@@ -64,10 +64,10 @@ class LandingPage extends Component {
 					<ContactModal
 						btnText="Click here to sign up!"
 						inputs={[
-							"Current_Grade",
 							"Name",
-							"Personal_(Not_School)_Contact_Email",
-							"Student_ID",
+							"Grade",
+							"Personal_Email",
+							"Prior_experiences/knowledge_(if_any)",
 						]}
 						desc="Enter your relative information below"
 						title="Lyman Robotics Club Sign Up"
