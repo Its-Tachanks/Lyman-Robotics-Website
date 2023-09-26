@@ -22,10 +22,10 @@ class SchedulePage extends Component {
         desc: "Recurring meeting (Every monday)",
       },
       {
-        date: new Date("September 21 2022 1:20"),
+        date: new Date("September 22 2022 2:20"),
         pmAm: "PM",
         location: "Building 9",
-        desc: "Recurring meeting (Every wednesday)",
+        desc: "Recurring meeting (Every thursday)",
       },
     ],
   };
