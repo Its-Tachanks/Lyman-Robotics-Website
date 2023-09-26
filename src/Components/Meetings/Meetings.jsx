@@ -24,7 +24,7 @@ class Meetings extends Component {
 					id="Meet2"
 				>
 					<li className="MeetDay">
-						<Meeting title="Wednesday" link="/" description="1:20-4:00" />
+						<Meeting title="Thursday" link="/" description="2:20-5:00" />
 					</li>
 				</ul>
 			</div>
