@@ -53,9 +53,6 @@ class LandingPage extends Component {
 					<hr />
 					<h2>Meeting Info</h2>
 					<Meetings />
-					<NavLink to="/schedule" className="LearnMoreNav">
-						View upcoming events
-					</NavLink>
 				</div>
 				<div className="SignUpDiv FadeInLoad">
 					<hr />
@@ -72,11 +69,6 @@ class LandingPage extends Component {
 						desc="Enter your relative information below"
 						title="Lyman Robotics Club Sign Up"
 					/>
-				</div>
-				<div className="FadeInLoad">
-					<hr />
-					<h2>Next meeting</h2>
-					<p className="LearnMoreNav">TBD</p>
 				</div>
 				<div className="EndSpacer" style={{ marginTop: "2rem" }}></div>
 			</React.Fragment>
